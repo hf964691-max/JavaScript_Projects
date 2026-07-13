@@ -1,1 +1,1 @@
-# JavaScript_Projects
+# JavaScript_Problems
