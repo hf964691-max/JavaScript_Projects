@@ -1,0 +1,111 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.container {
+    width: min(700px, 90%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container h1 {
+    width: 100%;
+    text-align: center;
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+#todo-input {
+    flex: 1;
+    min-width: 250px;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+#todo-input:focus {
+    border-color: #007bff;
+}
+
+#add-btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#add-btn:hover {
+    background: #0056d2;
+}
+
+
+#todo-list {
+    width: 100%;
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 18px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#todo-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+#todo-list li.completed {
+    text-decoration: line-through;
+    color: #777;
+    background: #e8f5e9;
+}
+
+#todo-list li button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #dc3545;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+#todo-list li button:hover {
+    background: #b02a37;
+}
